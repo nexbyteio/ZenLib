@@ -1,6 +1,6 @@
 #include <Zentime.h>
 
-unsigned long timerStart = 0;
+unsigned long elapsedTimer = 0;
 unsigned long periodicTimer = 0;
 unsigned long countdownStart = 0;
 unsigned long onceStart = 0;
@@ -13,7 +13,7 @@ void setup()
   Serial.begin(115200);
   delay(2000);
   Serial.println("Zentime demo started!");
-  timerStart = millis();
+  elapsedTimer = millis();
   periodicTimer = millis();
   countdownStart = millis();
   onceStart = millis();
@@ -23,14 +23,14 @@ void setup()
 void loop()
 {
   // 1. elapsed: check if a duration has passed
-  if (elapsed(timerStart, 2_s))
+  if (elapsed(elapsedTimer, 2_s))
   {
     Serial.println("[elapsed] 2 seconds passed.");
-    timerStart = millis(); // restart
+    elapsedTimer = millis(); // restart
   }
 
   // 2. elapsedSafe: safe version to handle millis() overflow
-  if (elapsedSafe(timerStart, 2_s))
+  if (elapsedSafe(elapsedTimer, 2_s))
   {
     Serial.println("[elapsedSafe] Safe timer fired.");
   }
