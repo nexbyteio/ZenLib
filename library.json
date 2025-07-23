@@ -1,0 +1,84 @@
+{
+    "name": "ZenLib",
+    "version": "1.0.0",
+    "description": "Readable time literals and helpers using Zentime for non-blocking Arduino code.",
+    "keywords": [
+        "timing",
+        "millis",
+        "non-blocking",
+        "literals",
+        "arduino",
+        "zentime",
+        "time",
+        "esp32",
+        "esp32-time",
+        "delay",
+        "scheduler",
+        "timer",
+        "loop",
+        "interval",
+        "debounce",
+        "state-machine",
+        "millis-timing",
+        "led-blink",
+        "repeat",
+        "elapsed",
+        "countdown",
+        "duration",
+        "tick",
+        "esp8266",
+        "stm32",
+        "rp2040",
+        "event-loop",
+        "callback",
+        "async",
+        "nonblocking",
+        "performance",
+        "tasks",
+        "timing-helpers",
+        "millis-magic",
+        "minimal",
+        "readable",
+        "embedded",
+        "interval-timer",
+        "microcontroller",
+        "event-driven",
+        "baremetal",
+        "realtime",
+        "minimalistic",
+        "human-readable",
+        "custom-delay",
+        "arduino-timing",
+        "delay-free",
+        "timing-macros",
+        "embedded-utils",
+        "zen",
+        "zenlib",
+        "lightweight",
+        "arduino-time",
+        "time-logic"
+    ],
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/nexbyteio/ZenLib.git"
+    },
+    "authors": [
+        {
+            "name": "NexByteIO",
+            "email": "nextbyteio@gmail.com",
+            "maintainer": true
+        }
+    ],
+    "frameworks": [
+        "arduino"
+    ],
+    "platforms": [
+        "espressif32",
+        "atmelsam",
+        "atmelavr",
+        "ststm32"
+    ],
+    "build": {
+        "srcFilter": "+<*>"
+    }
+}
