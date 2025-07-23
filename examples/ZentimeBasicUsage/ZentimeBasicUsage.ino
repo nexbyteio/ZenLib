@@ -15,6 +15,6 @@ void loop() {
 
   if (onceAfter(onceStart, 10_s)) {
     Serial.println("Only once after 10 seconds");
-    onceStart = millis() + 99999999; // Prevent repeating
+    onceStart = millis() + 2_s; // Prevent repeating
   }
 }
